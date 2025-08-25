@@ -16,6 +16,7 @@ what i founded from this data:
 6. there was only one account used with no TAX
 
 every script i wrote by help from Claude (which made me think how could i forget how to write `list(dict)` to dataframe :( ) but the theory and the insights are all by myself.
+
 ---
 wrote by Claude 
 
