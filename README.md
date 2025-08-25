@@ -1,24 +1,21 @@
 # Aajil AI Assessment - Purchase Order Data Analysis & Translation
 
 ---
-what i founded from this data:  
-1. It's a SA building company (حديد الراجحي) and other SA buidling brands
-2. BCY diffirenet measurements of 15 item which could be caused by some bad processing for these items
-3. the purches id what not on it's correct location because there was duplication, on the other hand there was item id column has 3150 unique number of items which is not
-   logicaly right. so i figured out that they could be swapped
-4. usually we had only product or item. but when they are combined the term production reffer to the category. but i've only product id which i can't make sure of this point
-5. Project ID are missing, they're all NaN.
-6. for the text tranlation. I'd three solution
-   i. Google translation api. but i have item that doesn't use actual name just Code. ex: HR ZRS... also i've arabic names. so it's ether i fill my projects but still not funcitonal solution
-      i mean i could use just CHAR ASCII code. if the first letter is between 65-95 (A-Z) or `.isalpha()` and then send a request to api to translate. but for code items like HR which means Heated R-something will translated to humen resourse
-   ii. LLMs which has two approaches: ether hardcode it (send it by myself to chatGPT and paste it) best approach for now, or use Qroq llm api which i found out it takes resources (time and money)
-      included hugging face because really good model needs permession to use.
-6. there was only one account used with no TAX
+What I found from this data:
+1.	It’s a Saudi building company (حديد الراجحي) along with other Saudi building brands.
+2.	BCY measurements are inconsistent for 15 items, which could be caused by poor processing of these items.
+3.	The purchase ID was not in the correct location because of duplication. On the other hand, the Item ID column had 3,150 unique item numbers, which is not logically correct. I think they might have been swapped.
+4.	Usually, we have either a product or an item. But when they are combined, the term production refers to the category. I only have a product ID, so I can’t confirm this point.
+5.	Project IDs are missing — they are all NaN.
+6.	For text translation, I considered three solutions:
+    i. Google Translation API – but some items don’t use actual names, just codes (e.g., HR ZRS…). Also, I already have Arabic names. So, this isn’t fully functional. I could check using ASCII/Unicode: if the first letter is between 65–95 (A–Z) or          `.isalpha()`, then send a request to the API to translate. But for code items like HR (Hot Rolled), it would incorrectly translate to “Human Resources.”
+  	ii. LLMs – two approaches: either hardcode it (send items manually to ChatGPT and paste results) — probably the best approach for now — or use the Qroq LLM API. But I found out it consumes resources (time and money). Hugging Face also has good models, but they require permission.
+7.	Only one account was used, with no tax applied.
 
-every script i wrote by help from Claude (which made me think how could i forget how to write `list(dict)` to dataframe :( ) but the theory and the insights are all by myself.
+Every script I wrote was with help from Claude (which made me laugh at myself for forgetting how to write list(dict) to a DataFrame 😅). But the theory and insights are all mine.
 
 ---
-wrote by Claude 
+next wrote by Claude 
 
 ## Overview
 This project analyzes and processes a purchase order items dataset containing 3,150 rows of building materials data. The main objectives were data cleaning, exploration, and automated translation/categorization using Large Language Models (LLMs).
