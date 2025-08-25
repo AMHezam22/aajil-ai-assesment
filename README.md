@@ -14,6 +14,8 @@ What I found from this data:
 
 Every script I wrote was with help from Claude (which made me laugh at myself for forgetting how to write list(dict) to a DataFrame 😅). But the theory and insights are all mine.
 
+[colab link](https://colab.research.google.com/drive/1hUWimjfbYaz_gm3I15gIP5MnTa1m7-12#scrollTo=B7jeIr68lMZ2)
+
 ---
 next wrote by Claude 
 
